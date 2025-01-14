@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Optional: Set a background color for the body */
+  }
+  
+  /* Optional: To ensure that no other elements on the page have margin/padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border don't affect element size */
+  }
+  
+  /* Change the font for the entire body */
+  body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold; /* You can replace Arial with any web-safe font */
+  }
+  
+  /* Change the font for the header */
+  header h1 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Change the font for paragraph */
+  p {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  
+    /* Header Section */
+    header {
+      background: url('https://www.trybooking.com/media/jvvnujl1/new_year_party.webp') no-repeat center/cover;
+      height: 100vh;
+      color:white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    /* Translucent Background for Header */
+  .header-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding around the text */
+    border-radius: 5px; /* Optional: round the corners */
+    text-align: center; /* Center the text */
+  }
+  
+  
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      
+      background-color: rgba(3, 0, 2, 0.719);
+    }
+    
+  
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    
+    header button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    header button:hover {
+      background-color: #45a049;
+    }
+    
+    /* Tabbed Navigation Section */
+    #tabs {
+      background-image: url('https://www.trybooking.com/media/jvvnujl1/new_year_party.webp'); 
+      background-size: contain;  /* Makes the background image smaller */
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 40px 20px;
+      text-align: 50%;
+      /*padding: 40px 20px;
+      text-align: center;*/
+    }
+    
+    
+    /* Intro Text */
+    .intro {
+      margin-bottom: 20px;
+      color: #555;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    
+    /* Details Section */
+    .details-section, .schedule-section, .tickets-section, .faq-section {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      
+    }
+    
+    .details-card, .schedule-list, .ticket-card, .faq-list {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+   
+    .details-card h3, .schedule-list li {
+      margin-bottom: 10px;
+    }
+    
+    .details-card ul {
+      list-style-type: square;
+      margin-top: 10px;
+      text-align: left;
+    }
+    
+    .ticket-card {
+      text-align: center;
+    }
+    
+    .ticket-card h3 {
+      color: #4caf50;
+    }
+    
+    .buy-button, .submit-button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .buy-button:hover, .submit-button:hover {
+      background-color: #45a049;
+    }
+    
+    .faq-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .faq-list li {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        background-color: azure;  
+        font-size: 1.8rem;
+      }
+    
+      .intro, .details-card, .schedule-list, .ticket-card, .faq-list {
+        font-size: 1rem;
+      }
+    }
+  
+    .color{
+      background-color: rgb(79, 4, 45) ;
+    }
+    
+    /* Tab Buttons */
+  .tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1rem;
+    background-color: #4caf50; /* Initial tab background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .tab-button:hover {
+    background-color: #45a049; /* Hover effect */
+    transform: scale(1.05); /* Slightly enlarge */
+  }
+  
+  /* Active Tab Button */
+  .tab-button.active {
+    background-color: #007bff; /* Change to blue for the active tab */
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: none; /* Hide all content initially */
+  }
+  
+  .tab-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .tab-content p, .tab-content ul {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Show active tab content */
+  .tab-content.active {
+    display: block;
+  }
+  
+  .home-tab-container {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 20px; /* Distance from the top of the page */
+    left: 20px; /* Distance from the left of the page */
+    z-index: 100; /* Ensure it stays on top of other content */
+  }
+  
+  .home-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4caf50; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #45a049; /* Hover effect */
+  }
+ .login-container{
+    align-items: center; 
+    background-color: whitesmoke;
+   font-family: 'Times New Roman', Times,serif;
+  padding: 50px;
+   margin: 300px; 
+  margin-top: 200; 
+  margin-bottom: 200;
+  
+}
+    .log{
+        background: url(https://static.wanderon.in/wp-content/uploads/2022/11/happy-new-year.jpg);
+    } 
+ 
+
+
+
+    
