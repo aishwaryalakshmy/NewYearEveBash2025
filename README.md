@@ -7,3 +7,6 @@ As part of my MERN stack learning journey, I built a New Year party ticket booki
 Interactive design for seamless user experience.
 Hands-on exposure to modern web development techniques.
 A fun and exciting way to kick off the new year with tech!
+
+LIVE DEMO 🔗 - https://aishwaryalakshmy.github.io/NewYearEveBash2025/
+
